@@ -27,7 +27,7 @@ line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 # 載入預訓練模型
-model = load_model('model/saved_model/digit_recognizer.h5')
+model = load_model('temp_model/digit_recognizer.h5')
 
 # 圖片預處理函數
 def preprocess_image(image_path):
